@@ -8,3 +8,12 @@
 def days_in_year(num_year):
     pass
 
+days_in_year = int(input())
+if days_in_year % 4 != 0:
+    print('365')
+elif days_in_year % 100 != 0:
+    print('366')
+elif days_in_year % 400 != 0:
+    print('365')
+else:
+    print('366')
